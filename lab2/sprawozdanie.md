@@ -1,6 +1,6 @@
 # Laboratorium 2 — Plan eksperymentu ML
 
-Repozytorium GitHub: **DO UZUPEŁNIENIA po utworzeniu repozytorium**
+Repozytorium GitHub: https://github.com/MarekCackowski/miob-laboratoria-2026
 
 ## Informacje diagnostyczne
 
