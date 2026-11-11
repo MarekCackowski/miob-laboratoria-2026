@@ -1,45 +1,43 @@
-# Laboratorium 2 — Plan eksperymentu ML
+# Laboratory 2 — ML Experiment Plan
 
-Repozytorium GitHub: https://github.com/MarekCackowski/miob-laboratoria-2026
+GitHub Repository: https://github.com/MarekCackowski/miob-laboratoria-2026
 
-## Informacje diagnostyczne
+## Diagnostic Information
 
-- Aplikacja: VS Code z Copilot SDK
-- Model: `auto` (model wybrany automatycznie przez aplikację)
-- Poziom rozumowania: nie był ręcznie ustawiany
+- Application: VS Code with Copilot SDK
+- Model: `auto` (model selected automatically by the application)
+- Reasoning level: not set manually
 
-## Plan eksperymentu
+## Experiment Plan
 
-Wytrenowano ustalony model na `data/train.csv`, następnie wygenerowano
-predykcje dla niewidzianego wcześniej `data/validation.csv`. Oceny dokonano
-osobnym krokiem przez połączenie predykcji z etykietami referencyjnymi po ID.
-Nie zmieniano hiperparametrów ani danych.
+A fixed model was trained on `data/train.csv`, and then predictions were generated for the previously unseen `data/validation.csv`. Evaluation was performed in a separate step by joining predictions with reference labels by ID.
+Hyperparameters and data were not changed.
 
-Model to `StandardScaler + LogisticRegression` z `C = 0.01`,
-sześcioma cechami numerycznymi i progiem `0.5`. Etykieta, ID i pełny tekst
-wiadomości nie były używane jako cechy.
+The model is `StandardScaler + LogisticRegression` with `C = 0.01`,
+six numerical features, and a threshold of `0.5`. The label, ID, and full text
+of the message were not used as features.
 
-## Wynik walidacji
+## Validation Result
 
-- wiadomości walidacyjne: **60**
-- prawdziwie dodatnie (`tp`): **6**
-- prawdziwie ujemne (`tn`): **40**
-- fałszywie dodatnie (`fp`): **0**
-- fałszywie ujemne (`fn`): **14**
-- błędy łącznie: **14**
+- validation messages: **60**
+- true positives (`tp`): **6**
+- true negatives (`tn`): **40**
+- false positives (`fp`): **0**
+- false negatives (`fn`): **14**
+- total errors: **14**
 
-Plik `metrics.json` zawiera zapisane metryki, a `predictions.csv` predykcje.
+The `metrics.json` file contains the saved metrics, and `predictions.csv` contains the predictions.
 
-## Weryfikacja
+## Verification
 
-Checker eksperymentu zwrócił:
+The experiment checker returned:
 
 ```text
 PASS: artifacts support evaluation of the fixed model on the supplied held-out messages.
 ```
 
-Testy jednostkowe: **3 testy, OK**.
+Unit tests: **3 tests, OK**.
 
-## Zapis sesji
+## Session Log
 
-Pełny zapis pracy znajduje się w `sesje/sesja-1.jsonl`.
+The full work log is located in `sesje/sesja-1.jsonl`.
