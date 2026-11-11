@@ -1,0 +1,17 @@
+# Środowiska wirtualne
+.venv/
+venv/
+env/
+
+# Cache Pythona
+__pycache__/
+*.py[cod]
+*.class
+
+# Narzędzia i IDE
+.vscode/
+.idea/
+.ipynb_checkpoints/
+
+# Pliki systemowe
+.DS_Store

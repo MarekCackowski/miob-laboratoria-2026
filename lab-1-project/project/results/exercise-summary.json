@@ -1,0 +1,14 @@
+{
+  "input_file": "/home/marek/Desktop/MIOB/lab-1-project/project/data/exercise.csv",
+  "input_sha256": "95e9049fe9f1283ba65514c7060499d175deaa88cd8c582097ced4cceed6ed07",
+  "total_messages": 8,
+  "label_counts": {
+    "ham": 5,
+    "spam": 3
+  },
+  "runtime": {
+    "python_executable": "/usr/bin/python3",
+    "python_version": "3.12.3",
+    "working_directory": "/home/marek/Desktop/MIOB/lab-1-project/project"
+  }
+}
