@@ -1,42 +1,37 @@
-# Laboratorium 1 — Podstawy pracy z agentem
+# Laboratory 1 — Agent Workflow Basics
 
-Repozytorium GitHub: https://github.com/MarekCackowski/miob-laboratoria-2026
+GitHub Repository: https://github.com/MarekCackowski/miob-laboratoria-2026
 
-## Informacje diagnostyczne
+## Diagnostic Information
 
-- Aplikacja: VS Code z Copilot SDK
-- Model: `auto` (model wybrany automatycznie przez aplikację)
-- Poziom rozumowania: nie był ręcznie ustawiany
+- Application: VS Code with Copilot SDK
+- Model: `auto` (model selected automatically by the application)
+- Reasoning level: not set manually
 
-## Cel i wykonanie
+## Objective and Execution
 
-Uruchomiono przygotowany program `describe_data.py` na pliku
-`data/exercise.csv`, zapisując raport do `results/exercise-summary.json`.
-Program odczytuje rekordy CSV, zlicza etykiety `ham` i `spam`, a następnie
-zapisuje raport JSON z informacją o wejściu, środowisku uruchomieniowym
-i sumach etykiet. Nie trenowano modelu.
+The prepared program `describe_data.py` was run on the `data/exercise.csv` file, saving the report to `results/exercise-summary.json`.
+The program reads CSV records, counts `ham` and `spam` labels, and then saves a JSON report with information about the input, runtime environment, and label totals. No model was trained.
 
-## Wynik
+## Result
 
-- liczba wiadomości: **8**
+- total messages: **8**
 - `ham`: **5**
 - `spam`: **3**
 - interpreter: Python 3.12.3
 
-Dołączony plik `exercise-summary.json` jest raportem z uruchomienia.
+The attached `exercise-summary.json` file is the execution report.
 
-## Weryfikacja
+## Verification
 
-Uruchomiono:
+Run:
 
 ```text
 python3 -m unittest discover -s tests -v
 ```
 
-Wynik: **1 test, OK**. Test używa trzech syntetycznych wiadomości
-i sprawdza poprawne zapisanie raportu oraz liczby 3 / 2 / 1. Nie zastępuje
-to weryfikacji raportu z `data/exercise.csv`, który został sprawdzony osobno.
+Result: **1 test, OK**. The test uses three synthetic messages and verifies the correct saving of the report as well as the counts of 3 / 2 / 1. This does not replace the verification of the report from `data/exercise.csv`, which was checked separately.
 
-## Zapis sesji
+## Session Log
 
-Pełny zapis pracy znajduje się w `sesje/sesja-1.jsonl`.
+The full work log is located in `sesje/sesja-1.jsonl`.
